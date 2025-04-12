@@ -1,0 +1,5 @@
+//delete the example name or duplicate this file
+const char* ssid = "";                     // SSID wifi
+const char* password = "";               // password wifi
+#define BOTtoken ""                     // Token Bot telegram
+#define CHAT_ID ""                     // Id user yang menggunakan

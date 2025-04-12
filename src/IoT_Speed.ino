@@ -3,6 +3,7 @@
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 #include <LiquidCrystal_I2C.h>
+#include "TokenWifi.h";
 
 int ena = 14;
 int in1 = 26;
@@ -10,11 +11,9 @@ int in2 = 27;
 int lastdirection = 1; //default putar ke kanan
 int speeds = 0;
 
-const char* ssid = "Cobi";          // SSID wifi
-const char* password = "SYIFA123";  // password wifi
 
-#define BOTtoken "7867060153:AAEiwOtbDeJZ6iytLeNyVZD6cvOu7JvhM5c"  // Token Bot telegram
-#define CHAT_ID "8190671274"                                       // Id user yang menggunakan
+
+
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtoken, client);
 int botRequestDelay = 1000;
